@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { Zap, TrendingUp, AlertTriangle, BarChart3, Wallet, Bell, CheckCircle, ArrowRight, Send } from 'lucide-react'
 import { useState } from 'react'
-import Image from 'next/image'
+// Using regular img for static export compatibility
 
 const features = [
   {
@@ -95,7 +95,7 @@ export default function Home() {
             transition={{ duration: 0.6, delay: 0.05 }}
             className="mb-8"
           >
-            <Image
+            <img
               src="/logo.png"
               alt="HyperSignals"
               width={120}
