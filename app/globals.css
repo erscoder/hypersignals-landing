@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hl-green: #00ff88;
+  --hl-blue: #00d4ff;
+}
+
+body {
+  background: #0a0a0f;
+  color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--hl-green) 0%, var(--hl-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glow-green {
+  box-shadow: 0 0 40px rgba(0, 255, 136, 0.3);
+}
+
+.glow-blue {
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.4); }
+  50% { box-shadow: 0 0 40px rgba(0, 255, 136, 0.6); }
+}
+
+.signal-card {
+  transition: all 0.3s ease;
+}
+
+.signal-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 255, 136, 0.3);
+}
