@@ -79,29 +79,19 @@ export default function Home() {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full text-sm mb-8">
-              <span className="w-2 h-2 bg-hl-green rounded-full animate-pulse" />
-              <span className="text-gray-400">Live signals for Hyperliquid</span>
-            </div>
-          </motion.div>
-
-          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.05 }}
-            className="mb-8"
+            className="mb-6"
           >
             <img
               src="/logo.png"
               alt="HyperSignals"
-              width={120}
-              height={120}
+              width={180}
+              height={180}
               className="mx-auto"
             />
+            <p className="text-gray-400 text-sm mt-4 tracking-widest uppercase">Live signals for Hyperliquid</p>
           </motion.div>
 
           <motion.h1
